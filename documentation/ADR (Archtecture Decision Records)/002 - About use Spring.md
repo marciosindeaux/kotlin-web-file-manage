@@ -7,9 +7,9 @@
 
 ## 1.Index
 
- * 1. Index
- * 2. Context
- * 3. Justifications
+ * 1.Index
+ * 2.Context
+ * 3.Justifications
    * 3.1 A widely used framework
    * 3.2 A Solid knoledge base
  * 4.Decision

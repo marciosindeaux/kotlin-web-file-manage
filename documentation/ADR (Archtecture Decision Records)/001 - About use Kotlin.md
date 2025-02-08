@@ -7,9 +7,9 @@
 
 ## 1.Index
 
- * 1. Index
- * 2. Context
- * 3. Justifications
+ * 1.Index
+ * 2.Context
+ * 3.Justifications
    * 3.1 An easy language to Understand and learn
    * 3.2 An easy language to maintenance
  * 4.Decision
