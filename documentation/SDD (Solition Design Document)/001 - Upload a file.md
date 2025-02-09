@@ -69,7 +69,6 @@ curl --request POST \ --url http://file-manager-service.site.com/file/upload \
 ```json
 { 
 	"filename": "encrypted-name.pdf", 
-	"dowload_link": "http://file-manager-service.site.com/file/download/encrypted-name.pdf", 
 	"file_extension": "application/octet-stream", 
 	"size": 14720 
 }
