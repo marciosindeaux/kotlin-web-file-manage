@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: file-manager-service
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 200MB
+
+server:
+  port: 8080
+
+
+resources:
+  volume:
+    upload:
+      directory-name: updatedFiles
+    files:
+      name-separator: .
