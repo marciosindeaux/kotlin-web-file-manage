@@ -1,7 +1,6 @@
 package com.sindeaux.file.manager.service.domain.models.files
 
 import com.sindeaux.file.manager.service.application.web.responses.EncryptedFileResponse
-import com.sindeaux.file.manager.service.domain.models.crypt.SourceEncryptModel
 import org.springframework.http.MediaType
 
 data class SourceFileModel (

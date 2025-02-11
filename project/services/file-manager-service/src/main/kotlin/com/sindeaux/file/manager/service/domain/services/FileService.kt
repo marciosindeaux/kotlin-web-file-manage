@@ -18,10 +18,9 @@ class FileService (
     @Value("\${resources.volume.files.name-separator}")
     private val filenameSeparator: String,
     private val cryptoService: CipherSecurityService
-){
+)  {
 
     fun saveFile(file: MultipartFile) : SourceFileModel {
-
         val cleanedFileName = StringUtils.cleanPath(file.originalFilename.orEmpty())
         val extension = cleanedFileName.split(".").lastOrNull()
 
@@ -47,9 +46,7 @@ class FileService (
             )
 
             createDirectoryIfNotExists().resolve(encryptedName)
-                .also { target ->
-                    Files.copy(file.inputStream, target, StandardCopyOption.REPLACE_EXISTING)
-                }
+                .also { target -> Files.copy(file.inputStream, target, StandardCopyOption.REPLACE_EXISTING) }
 
             return sourceFileModel
 
