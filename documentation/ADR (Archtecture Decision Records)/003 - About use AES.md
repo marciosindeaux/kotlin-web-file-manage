@@ -17,7 +17,7 @@
 
 ## 2.Context
 
-After understanding some needs established by the client for name encryption, we understand that because it is a simpler encryption, the AES (Advanced Encryption Standard) algorithm seems to be lightweight, safe and useful for the situation. Thinking about its integrations with java and kotlin, it seems to be a good, simple and maintainable solution.
+After understanding some needs established by the client for encryption, we understand that because it is a simpler encryption, the AES (Advanced Encryption Standard) algorithm seems to be lightweight, safe and useful for the situation. Thinking about its integrations with java and kotlin, it seems to be a good, simple and maintainable solution.
 
 ## 3.Justifications 
 ### 3.1 A simple and complete encryption
