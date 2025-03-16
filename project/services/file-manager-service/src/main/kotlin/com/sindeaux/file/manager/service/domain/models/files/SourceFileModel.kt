@@ -8,10 +8,4 @@ data class SourceFileModel (
     val encryptedName : String,
     val documentType: String? = MediaType.APPLICATION_OCTET_STREAM_VALUE,
     val documentSize: Long
-) {
-    fun toEncryptedFileResponse() = EncryptedFileResponse(
-        encryptedName,
-        documentType.orEmpty(),
-        documentSize
-    )
-}
+)

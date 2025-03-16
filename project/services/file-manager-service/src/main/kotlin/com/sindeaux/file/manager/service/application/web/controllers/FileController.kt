@@ -18,9 +18,13 @@ class FileController (
 
     @PostMapping("upload")
     fun uploadNewFile(@RequestParam("file") file : MultipartFile) : ResponseEntity<EncryptedFileResponse> {
-        val encryptedFileResponse = fileService.saveFile(file).toEncryptedFileResponse()
         return ResponseEntity
             .status(HttpStatus.CREATED)
-            .body(encryptedFileResponse)
+            .body(
+                EncryptedFileResponse.fromSourceFileModel(
+                    fileService.saveFile(file)
+                )
+            )
     }
+
 }
